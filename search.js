@@ -108,3 +108,23 @@ function searchIndex(a, b) {
 	}
 	return maxMatch / large.length;
 }
+
+function printRecipe() {
+	console.log("printing");
+	var wholePage = document.body.innerHTML;
+	var holder;
+	if (document.getElementsByClassName("normal-body-header-container").length === 0) {
+		//document is a navigation page
+		holder = document.getElementsByClassName("body-header-container")[0];
+	} else {
+		//document is normal text page
+		holder = document.getElementsByClassName("normal-body-header-container")[0];
+	}
+
+	document.body.innerHTML = holder.innerHTML;
+	document.body.removeChild(document.body.firstElementChild)
+
+	window.print();
+
+	document.body.innerHTML = wholePage;
+}

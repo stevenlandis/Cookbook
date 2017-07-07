@@ -56,7 +56,6 @@
 }
 
 .body-header-container {
-	margin-top: 20px;
 	display: inline-block;
 	margin-left: 20px;
 	border-left: 1px solid;
@@ -65,7 +64,6 @@
 }
 
 .normal-body-header-container {
-	margin-top: 40px;
 }
 
 .navigation-item {
